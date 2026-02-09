@@ -1632,7 +1632,7 @@ void AwtFrame::_NotifyModalBlocked(void *param)
         }
     }
 
-    if ((f != NULL) && ::IsWindow(f->GetHWnd()))
+    if (::IsWindow(f->GetHWnd()))
     {
         // get an HWND of the toplevel window this embedded frame is within
         HWND fHWnd = f->GetHWnd();
